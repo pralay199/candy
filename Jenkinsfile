@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     // Build Docker image
-                    sh 'sudo docker compose up --build '
+                    sh 'sudo docker compose up --build -d '
                 }
             }
         }
