@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
                     // Build Docker image
-                    sh 'cd new && sudo docker compose up --build '
+                    sh 'sudo docker compose up --build '
                 }
             }
         }
