@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   app:
-    image: candy:v1
+    image: pralay1993/candy:v1
     # build:
     #   context: .
     #   dockerfile: Dockerfile
@@ -13,4 +13,12 @@ services:
       NODE_ENV: production
     volumes:
       - ./local_data:/usr/src/app  # Mount the current directory inside the container (optional)
+  # jenkin:
+  #     image: jenkins/jenkins:latest
 
+  #     container_name: jenkin
+  #     ports:
+  #       - "3080:3080"  # Replace with your app's port if different
+
+  #     volumes:
+  #       - ./local_data:/usr/src/app  # Mount the current directory inside the container (optional)
