@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'my_new_node'
+    }
 
     environment {
         DOCKER_IMAGE = 'your-image-name:latest'
